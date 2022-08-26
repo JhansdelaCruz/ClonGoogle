@@ -5,17 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clon Google</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header>
-      <div>
+      <div class="navegacion">
         <a href=""><img src="img/arrow_400-24.svg" alt="" /></a>
         <a href=""><img src="img/arrowForward_400-24.svg" alt="" /></a>
         <a href=""><img src="img/refresh_400-24.svg" alt="" /></a>
       </div>
-      <div>
-        <input type="text" />
+      <div class="nav__input">
+        <input class="busqueda" type="text" placeholder="google.cl" />
+        <img class="candado" src="./img/icons8-bloquear.svg" alt="">
+        <div class="elementos__left">
+          <img class="traductor" src="./img/gTranslate_300-24.svg" alt="">
+          <img class="favorito" src="./img/grade_300-24.svg" alt="">
+          <img class="compartir" src="./img/sharePage.svg" alt="">
+
+        </div>
       </div>
       <div>
         <a href="">
@@ -31,11 +44,47 @@
           <img src="img/more_300-24.svg" alt="" />
         </a>
       </div>
+      <nav class="nav__perfil">
+        <a href="">Gmail</a>
+        <a href="">Imágenes</a>
+        <a href=""><img src="./img/apps_400-24.svg" alt="" /></a>
+        <a href=""><img class="nav__user" src="/img/user.jpg" alt="" /></a>
+      </nav>
     </header>
     <main>
-      <nav></nav>
+      <section class="principal">
+        <img class="lupa" src="./img/icons8-búsqueda.svg" alt="">
+        <img class="voiceSearch" src="./img/voicesSearch.svg" alt="">
+        <img src="./img/googlelogo_light_color_272x92dp.png" alt="" srcset="" />
+        <input type="text" />
+        <div class="botones">
+          <button>Buscar con Google</button>
+          <button>Voy a tener suerte</button>
+        </div>
+        <p class="parrafo__google">
+          <span>Ofrecido por Google en: </span
+          ><a href="http://">English Fran&ccedil;ais</a>
+        </p>
+      </section>
     </main>
-
-    <footer></footer>
+    <footer>
+      <section class="pais">
+        <p class="parrafo__pais">Canadá</p>
+        <hr class="menu__division">
+      </section>
+      <section class="menu__bottom">
+        <div class="menu__left">
+          <a href="">Sobre Google</a>
+          <a href="">Publicidad</a>
+          <a href="">Negocios</a>
+          <a href="">Cómo funciona la búsqueda</a>
+        </div>
+        <div class="menu__rigth">
+          <a href="">Privacidad</a>
+          <a href="">Condiciones</a>
+          <a href="">Preferencias</a>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
