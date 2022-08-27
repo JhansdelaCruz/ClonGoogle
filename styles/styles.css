@@ -2,6 +2,7 @@
   --color-fondo-primario: #202124;
   --color-fondo-secundario: #48484b;
   --white-color: #ffffff;
+  --white-color__opacity: #ffffff40;
   --white-color-secundario: #e8eaed;
   --black-color: #000000;
   --color-input-header: #e1e1e2;
@@ -131,12 +132,23 @@ nav {
   width: 10%;
   vertical-align: middle;
 }
-.elementos__left > img {
+.elementos__left img {
   vertical-align: middle;
-  margin-right: 16px;
   max-width: 20px;
   max-height: 20px;
 }
+.elementos__left > a {
+  text-decoration: none;
+  margin-right: 16px;
+  padding: 0;
+  max-width: 10px;
+  max-height: 22px;
+  border-radius: 12px;
+}
+.elementos__left > a:hover {
+  background-color: var(--white-color__opacity);
+}
+
 img.elementos__left--compartir {
   max-width: 16px;
   max-height: 16px;
@@ -265,6 +277,7 @@ footer {
   z-index: 1;
   background-color: var(--color-fondo-footer);
   color: var(--white-color);
+  opacity: 45%;
 }
 footer {
   font-size: 1rem;
@@ -289,5 +302,5 @@ footer {
 }
 .menu__rigth {
   display: inline-block;
-  /* float: right; */
+  float: right;
 }
