@@ -154,11 +154,14 @@ img.elementos__left--compartir {
   max-height: 16px;
 }
 
-nav a {
+.nav__perfil a {
   vertical-align: middle;
   margin-right: 10px;
   text-decoration: none;
   color: var(--white-color);
+}
+.nav__perfil a > img {
+  vertical-align: middle;
 }
 .nav__user {
   border-radius: 50%;
@@ -175,7 +178,7 @@ main {
 }
 
 .principal {
-  margin-top: 7%;
+  margin-top: 11%;
   height: 100%;
 }
 .principal a {
@@ -301,6 +304,6 @@ footer {
   display: inline-block;
 }
 .menu__rigth {
-  display: inline-block;
   float: right;
+  display: inline-block;
 }
