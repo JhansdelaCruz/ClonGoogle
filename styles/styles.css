@@ -93,6 +93,7 @@ header > div:nth-child(3) {
 }
 header > div:nth-child(3) a {
   margin-right: 6px;
+  text-decoration: none;
 }
 
 /*Disposición de elementos en la cabecera*/
